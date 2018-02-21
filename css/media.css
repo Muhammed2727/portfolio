@@ -116,6 +116,9 @@
 	.contact{
 		height: 400px;
 	}
+	.about {
+    	height: 560px;
+	}
 
 
 }
@@ -129,19 +132,25 @@
 	.portfolio {
     	height: 440px;
 	}
+	.about {
+    	height: 610px;
+	}
 
 }
 
 
 @media screen and (max-width: 335px){
 	.about{
-		height: 620px;
+		height: 650px;
 		padding: 40px 0;
 	}
 	.header img {
     	width: 145px;
    	 	padding-top: 10px;
-   	 }
+   	}
+   	.about {
+    	height: 700px;
+	}
 }
 
 
@@ -153,7 +162,9 @@
 	.portfolio {
     	height: 360px;
 	}
-
+	.about {
+    	height: 840px;
+    }
 }
 
 

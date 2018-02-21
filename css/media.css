@@ -1,0 +1,175 @@
+@media screen and (max-width: 1300px){
+	.imga img{
+		height: 0;
+		border: none;
+	}
+	.about {
+		height: 500px;
+		display: block;
+	}
+
+}
+
+
+@media screen and (max-width: 1000px) {	
+	.about {
+		height: 500px;
+		display: block;
+	}
+
+	.about1{
+		width: 100%;
+		position: static;
+	}
+	
+	.portfolio{
+		width: 100%;
+	}
+
+}
+
+
+@media screen and (max-width: 870px){
+	.contact{
+		background-size: 330%;
+	}
+
+}
+
+
+@media screen and (max-width: 745px){
+	.portfolio{
+		height: 800px;
+	}
+}
+
+
+@media screen and (max-width: 700px){	
+	.header{
+		-webkit-background-size: 1000px;
+		     -o-background-size: 1000px;
+		        background-size: 1000px;
+	}
+
+	.header{
+		height: 415px;
+	}
+	.top-nav{
+		position: static;
+	}
+	#menu{
+		display: none;
+	}
+	.brand {
+		display: block;	
+	}
+	
+	.about1{
+		display: block;
+	}
+	.header1 h1{
+		padding-top: 100px;
+	}
+}
+
+
+@media screen and (max-width: 640px){
+	.header1 h1{
+		font-size: 40px;
+		text-align: center;
+	}
+
+}
+
+
+@media screen and (max-width: 503px){
+	.portfolio .box {
+   		width: 180px;
+    	height: 160px;
+	}
+	.portfolio {
+    	height: 640px;
+	}
+
+}
+
+
+@media screen and (max-width: 420px){
+	.contact p{
+		font-size: 12px;
+	}
+	.gmail i {
+		width: 20px;
+		height: 20px;
+		margin-top: 15px;
+		line-height: 20px;
+	}
+	.gmail a {
+		font-size: 13px;
+		line-height: 15px;
+	}
+	.gmail .fa{
+		font-size: 11px;
+		width: 17px;
+    	height: 17px;
+	}
+	.contact{
+		height: 400px;
+	}
+
+
+}
+
+
+@media screen and (max-width: 383px){
+	.portfolio .box{
+		width: 130px;
+		height: 100px;
+	}
+	.portfolio {
+    	height: 440px;
+	}
+
+}
+
+
+@media screen and (max-width: 335px){
+	.about{
+		height: 620px;
+		padding: 40px 0;
+	}
+	.header img {
+    	width: 145px;
+   	 	padding-top: 10px;
+   	 }
+}
+
+
+@media screen and (max-width: 285px){
+	.portfolio .box{
+		width: 100px;
+		height: 80px;
+	}
+	.portfolio {
+    	height: 360px;
+	}
+
+}
+
+
+
+
+@media screen and (min-width: 700px){
+	.header{
+		-webkit-background-size: 1600px;
+		     -o-background-size: 1600px;
+		        background-size: 1600px;
+	}
+
+	.btn-menu{
+		display: none;
+	}
+
+}
+
+

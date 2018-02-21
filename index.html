@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/media.css">
+	<link rel="stylesheet" href="css/animate.css">
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+</head>
+<body>	
+	<div class="header" id="home">	
+		<div class="btn-menu active" id="btn-menu"><span></span></div>
+		<nav class="menu">
+			<ul>
+				<li><a href="#home">Главная</a></li>
+				<li><a href="#about">Обо мне</a></li>
+				<li><a href="#portfolio">Мои работы</a></li>
+				<li><a href="#contact">Контакты</a></li>
+			</ul>
+		</nav>
+
+		<nav class="top-nav">	
+			<span class="brand">
+				<a href="#"><img src="img/logo.png" alt="" width="180"></a>
+			</span>	
+			<ul id="menu">
+				<li><a href="#home">Главная</a></li>
+				<li><a href="#about">Обо мне</a></li>
+				<li><a href="#portfolio">Мои работы</a></li>
+				<li><a href="#contact">Контакты</a></li>
+			</ul>
+		</nav>
+		<div class="header1">
+			<h1 class="wow zoomIn">Добро пожаловать!</h1>
+		</div>
+	</div>
+
+
+	<div class="about" id="about">
+		<div class="container">
+			<div class="imga">
+				<img src="img/about.jpg" alt="" width="410" class="wow fadeInUp">
+			</div>
+
+			<div class="about1 wow fadeInUp">
+				<h2>Обо мне</h2>
+				<p>Являюсь профессионалом в сфере front-end разработки, верстаю как статичные странички, корпоративные порталы, так и адаптивные промо-сайты и лендинги.<br>
+				Работаю чётко, качественно и быстро!</p>
+				<b>Краткий список моих знаний:</b><br>
+				<p>Начальные знания HTML&CSS<br>Уверенное знание HTML5<br>Уверенное знание и владение CSS3<br>Знание базовых шаблонов проектирования<br>Умение писать качественный рабочий код<br>Понимание Bootstrap<br>Уверенный опыт работы с Javascript<br>Разработка сайтов с нуля</p>
+			</div>
+		</div>
+	</div>
+	
+	<div class="portfolio" id="portfolio">
+		<div class="portfolio1 wow fadeInUp">
+			<h2>Мои работы</h2>
+			<div class="box snake">
+				<img src="img/1.jpg" alt="">
+				<a href="#"><div class="overlay"><i class="fa fa-search" aria-hidden="true"></i></div></a>
+			</div>
+			<div class="box snake">
+				<img src="img/2.jpg" alt="">
+				<a href="#"><div class="overlay"><i class="fa fa-search" aria-hidden="true"></i></div></a>
+			</div>
+			<div class="box snake">
+				<img src="img/3.jpg" alt="">
+				<a href="#"><div class="overlay"><i class="fa fa-search" aria-hidden="true"></i></div></a>
+			</div>
+			<div class="box snake">
+				<img src="img/1.jpg" alt="">
+				<a href="#"><div class="overlay"><i class="fa fa-search" aria-hidden="true"></i></div></a>
+			</div>
+			<div class="box snake">
+				<img src="img/2.jpg" alt="">
+				<a href="#"><div class="overlay"><i class="fa fa-search" aria-hidden="true"></i></div></a>
+			</div>
+			<div class="box snake">
+				<img src="img/3.jpg" alt="">
+				<a href="#"><div class="overlay"><i class="fa fa-search" aria-hidden="true"></i></div></a>
+			</div>
+		</div>	
+	</div>
+
+	<div class="contact" id="contact">
+		<div class="container">
+			<h2>Контакты</h2>
+			<div class="gmail">
+				<p><i class="fa fa-envelope" aria-hidden="true"></i>talantbekov2727@gmail.com</p>
+				<p><i class="fa fa-whatsapp" aria-hidden="true"></i>+996708767626</p>
+				<p><i class="fa fa-skype" aria-hidden="true"></i>******</p>
+				<a href="http://instagram.com/talantbekov2727"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+				<a href="http://facebook.com/Muhammed.Talantbekov"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+				<a href="http://vk.com/id461345669"><i class="fa fa-vk" aria-hidden="true"></i></a>
+			</div>
+		</div>
+	</div>
+
+
+
+	<script src="js/jquery-1.12.4.min.js"></script>
+	<script src="js/snake.js"></script>
+	<script src="js/wow.min.js"></script>
+
+
+	<script type="text/javascript">
+
+
+		$(document).ready(function(){
+
+			$('.btn-menu').click(function(){		
+				$('.menu').slideToggle(700);	
+				if ($(this).hasClass('not-active')) {
+					$(this).addClass('is-active').removeClass('not-active');
+				}else{
+					setTimeout(function(){
+					$('.is-active').addClass('not-active').removeClass('is-active')
+					},600)			
+				}		
+			});
+		});
+
+
+
+		$(".snake").snakeify({
+  		speed: 200
+		});
+
+
+
+
+		$(document).ready(function(){
+   		 	$("#menu").on("click","a", function (event) {
+       	 	event.preventDefault();
+        	var id  = $(this).attr('href'),
+            top = $(id).offset().top;
+        $('body,html').animate({scrollTop: top}, 800);
+   		 });
+		});
+
+
+
+		$(window).on('scroll', function () {
+			if($(window).scrollTop()) {
+				$('nav').addClass('black');
+			}
+			else {
+				$('nav').removeClass('black')
+			}
+		});
+	</script>	
+	
+	<script>
+		new WOW().init();
+	</script>
+
+</body>
+</html>

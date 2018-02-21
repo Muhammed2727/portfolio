@@ -154,6 +154,9 @@
    	.about {
     	height: 700px;
 	}
+	.about1 p{
+		font-size: 18px;
+	}
 }
 
 

@@ -16,7 +16,7 @@
 
 @media screen and (max-width: 1000px) {	
 	.about {
-		height: 500px;
+		height: 450px;
 		display: block;
 	}
 
@@ -123,7 +123,7 @@
 		height: 400px;
 	}
 	.about {
-    	height: 560px;
+    	height: 500px;
 	}
 
 
@@ -139,7 +139,7 @@
     	height: 440px;
 	}
 	.about {
-    	height: 630px;
+    	height: 540px;
 	}
 
 }
@@ -147,16 +147,13 @@
 
 @media screen and (max-width: 335px){
 	.about{
-		height: 650px;
+		height: 610px;
 		padding: 40px 0;
 	}
 	.header img {
     	width: 145px;
    	 	padding-top: 10px;
    	}
-   	.about {
-    	height: 700px;
-	}
 	.about1 p{
 		font-size: 18px;
 	}
@@ -172,7 +169,7 @@
     	height: 360px;
 	}
 	.about {
-    	height: 840px;
+    	height: 660px;
     }
     .menu{
     	height: 205px;

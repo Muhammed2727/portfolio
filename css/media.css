@@ -159,6 +159,12 @@
 	}
 }
 
+@media screen and (max-width: 344px){
+	.about {
+    	height: 590px;
+	}
+}
+
 
 @media screen and (max-width: 285px){
 	.portfolio .box{

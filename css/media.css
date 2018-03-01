@@ -28,6 +28,9 @@
 	.portfolio{
 		width: 100%;
 	}
+	.header img{
+		padding-top: 10px;
+	}
 
 }
 
@@ -35,6 +38,10 @@
 @media screen and (max-width: 870px){
 	.contact{
 		background-size: 330%;
+	}
+	.header1 h1{
+		max-width: 500px;
+		margin: 0 auto;
 	}
 
 }
@@ -71,25 +78,28 @@
 		display: block;
 	}
 	.header1 h1{
-		padding-top: 100px;
+		padding-top: 60px;
 	}
 	nav.black{
-		background: rgba(0,0,0,0.3);
+		background: rgba(0,0,0,0.4);
 	}
 }
 
 
 @media screen and (max-width: 640px){
 	.header1 h1{
-		font-size: 40px;
+		font-size: 50px;
 		text-align: center;
+	}
+	.header1 h1{
+		padding-top: 100px;
 	}
 
 }
 
 
 @media screen and (max-width: 503px){
-	.portfolio .box {
+	.portfolio .hover-box {
    		width: 180px;
     	height: 160px;
 	}
@@ -108,7 +118,7 @@
 		width: 20px;
 		height: 20px;
 		margin-top: 15px;
-		line-height: 20px;
+		line-height: 18px;
 	}
 	.gmail a {
 		font-size: 13px;
@@ -131,7 +141,7 @@
 
 
 @media screen and (max-width: 383px){
-	.portfolio .box{
+	.portfolio .hover-box{
 		width: 130px;
 		height: 100px;
 	}
@@ -162,15 +172,14 @@
 @media screen and (max-width: 344px){
 	.about {
     	height: 590px;
-	}
-	.about {
-    	padding: 25px 0 70px;
-	}
+    	padding: 25px 0px 70px;
+    }
+	
 }
 
 
 @media screen and (max-width: 285px){
-	.portfolio .box{
+	.portfolio .hover-box{
 		width: 100px;
 		height: 80px;
 	}
@@ -196,6 +205,12 @@
 	}
 
 	.btn-menu{
+		display: none;
+	}
+	.menu {
+		height: 0;
+	}
+	.menu ul li{
 		display: none;
 	}
 

@@ -13,25 +13,27 @@ body{
 	margin: 0 auto;
 }
 .header{
+	background: url(../img/bg1.jpg)50% 0% no-repeat;
 	position: relative;
-	background: url(../img/bg1.jpg) no-repeat 50% 0%;
 	max-width: 100%;
 	height: 665px;
 }
 .header1{
-	max-width: 435px;
+	max-width: 700px;
     margin: 0 auto;
 }
 .header1 h1{
 	color: #fff;
 	font-family: 'LibreBaskerville Bold';
-	font-size: 50px;
+	font-size: 80px;
 	margin: 0;
+	text-align: center;
 	padding-top: 250px;
 }
 .header img{
 	position: relative;
 	display: block;
+	padding-top: 6px;
 }
 .brand{
 	float: left;
@@ -43,9 +45,9 @@ body{
 .btn-menu{
 	display: block;
 	float: right;
-	width: 62px;
-    height: 62px;
-    background: #313131;
+	width: 75px;
+    height: 75px;
+    background: #c79346;
 	position: relative;
 	z-index: 2;
 }
@@ -75,11 +77,14 @@ body{
 .menu{
 	display: none;
 	position: absolute;
-	height: 192px;
-	top: 62px;
-	right: 0;
-	width: 40%;
-	background: #313131;
+	height: 100vh;
+    width: 100%;
+    top: 0;
+    right: 0;
+    text-align: center;
+    line-height: 75px;
+    z-index: 1;
+    background: #c79346;
 }
 .menu ul{
 	padding: 0;
@@ -100,10 +105,10 @@ body{
 }
 
 
-nav{
+.top-nav{
 	width: 100%;
-    height: 62px;
-    background: rgba(0,0,0,0.3);
+    height: 75px;
+    background: rgba(0,0,0,0.4);
     position: fixed;
     z-index: 1;
     top: 0;
@@ -120,7 +125,7 @@ nav #menu li{
 	display: inline-block;
 	position: fixed;
     padding: 0 10px;
-   	line-height: 32px;
+   	line-height: 45px;
     position: relative;
     transition: all 0.3s ease-out;
 }
@@ -137,7 +142,7 @@ nav #menu li a::before{
 	left: 0;
 	height: 2px;
 	width: 0;
-	background: #dc5c0d;
+	background: #9b50b3;
 	transition: .3s;
 }
 nav #menu li a::after{
@@ -147,7 +152,7 @@ nav #menu li a::after{
 	right: 0;
 	height: 2px;
 	width: 0;
-	background: #68cef8;
+	background: #4724cc;
 	transition: .3s;
 }
 nav #menu li a:hover::before{
@@ -228,47 +233,66 @@ nav #menu li a:focus{
 	padding: 50px 0px 50px;
 	margin: 0;
 }
-.portfolio .box{
+.portfolio .hover-box{
 	display: inline-block;
 	position: relative;
 	list-style: none;
 	width: 240px;
 	height: 220px;
-}
-.portfolio .box img{
-	width: 100%;
-	transition: .5s;
-}
-.portfolio .box.snake{
-	position: relative;
 	overflow: hidden;
 }
-.overlay{
-	position: absolute;
-	text-align: center;
+.portfolio .hover-box img{
 	width: 100%;
-	height: 100%;
-	background: rgba(214,214,214,0.4);
+	transition: .5s;
+	opacity: 1;
+	z-index: 1;
 }
-.overlay i{
+.hover-box i{
 	position: absolute;
-	margin: 0;
-	padding: 0;
-	top: 40%;
-	transform: translateY(-50%);
-	transform: translateX(-50%);
-	color: #eaeaea;
-	font-size: 50px;
-	transition: .2s;
+	top: 44%;
+    left: 41%;
+    font-size: 50px;
+    color: #fff;
+    opacity: 0;
+    z-index: 3;
+    transition: .6s;
 }
-.overlay i:hover{
-	color: #1f1d1d;	
+.hover-box a:before,
+.hover-box a:after{
+	content: '';
+	position: absolute;
+	width: 200%;
+	height: 200%;
+	transition: .6s;
+	mix-blend-mode: darken;
+}
+.hover-box a:before{
+	right: 0;
+	bottom: -100%;
+	background: rgba(86,7,80,0.8);
+	transform: skew(-45deg) translateX(100%); 
+}
+.hover-box a:after{
+	left: 0;
+	top: -100%;
+	background: rgba(41,54,152,0.8);
+	transform: skew(135deg) translateX(-100%); 
+}
+.hover-box:hover a:before{
+	transform: skew(-45deg) translateX(0%); ;
+}
+
+.hover-box:hover a:after{
+	transform: skew(135deg) translateX(0%); ;
+}
+
+.hover-box:hover i{
+	opacity: 1;
 }
 
 
 .contact{
 	background: url(../img/contact.jpg) no-repeat 50% 50%;
-	opacity: 0.9;
 	height: 500px;
 	padding-bottom: 70px;
 	background-size: 100%; 

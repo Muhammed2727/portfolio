@@ -40,16 +40,18 @@
 		background-size: 330%;
 	}
 	.header1 h1{
-		max-width: 500px;
-		margin: 0 auto;
+		padding-left: 100px;
 	}
 
 }
 
 
-@media screen and (max-width: 745px){
+@media screen and (max-width: 728px){
 	.portfolio{
-		height: 800px;
+		height: 760px;
+	}
+	.header1 h1{
+		color: #fff;
 	}
 }
 
@@ -76,9 +78,11 @@
 	
 	.about1{
 		display: block;
+		margin: 0px -40px;
 	}
 	.header1 h1{
 		padding-top: 60px;
+		font-size: 70px;
 	}
 	nav.black{
 		background: rgba(0,0,0,0.4);
@@ -88,13 +92,9 @@
 
 @media screen and (max-width: 640px){
 	.header1 h1{
-		font-size: 50px;
-		text-align: center;
-	}
-	.header1 h1{
+		font-size: 60px;
 		padding-top: 100px;
 	}
-
 }
 
 
@@ -106,7 +106,11 @@
 	.portfolio {
     	height: 640px;
 	}
-
+	.header1 h1{
+		margin: 0 auto;
+    	width: 326px;
+    	padding-left: 0;
+	}
 }
 
 
@@ -135,7 +139,10 @@
 	.about {
     	height: 500px;
 	}
-
+	.header1 h1{
+		font-size: 50px;
+		width: 280px;
+	}
 
 }
 
@@ -154,6 +161,12 @@
 
 }
 
+@media screen and (max-width: 344px){
+	.about {
+    	height: 590px;
+    	padding: 25px 0px 70px;
+    }
+}
 
 @media screen and (max-width: 335px){
 	.about{
@@ -167,16 +180,17 @@
 	.about1 p{
 		font-size: 18px;
 	}
+	.about1{
+		margin: 0;
+	}
 }
 
-@media screen and (max-width: 344px){
-	.about {
-    	height: 590px;
-    	padding: 25px 0px 70px;
-    }
-	
+@media screen and (max-width: 295px){
+	.header1 h1 {
+    	font-size: 45px;
+    	width: 250px;
+	}
 }
-
 
 @media screen and (max-width: 285px){
 	.portfolio .hover-box{
@@ -197,7 +211,7 @@
 
 
 
-@media screen and (min-width: 700px){
+@media screen and (min-width: 701px){
 	.header{
 		-webkit-background-size: 1600px;
 		     -o-background-size: 1600px;

@@ -13,22 +13,20 @@ body{
 	margin: 0 auto;
 }
 .header{
-	background: url(../img/bg1.jpg)50% 0% no-repeat;
-	position: relative;
+	background: url(../img/bg1.jpeg)100% 0% no-repeat;
 	max-width: 100%;
 	height: 665px;
 }
 .header1{
-	max-width: 700px;
-    margin: 0 auto;
+	max-width: 500px;
 }
 .header1 h1{
-	color: #fff;
+	color: #619fb4;
 	font-family: 'LibreBaskerville Bold';
 	font-size: 80px;
 	margin: 0;
-	text-align: center;
 	padding-top: 250px;
+	padding-left: 200px;
 }
 .header img{
 	position: relative;
@@ -47,33 +45,59 @@ body{
 	float: right;
 	width: 75px;
     height: 75px;
-    background: #c79346;
 	position: relative;
 	z-index: 2;
 }
 .btn-menu span{
-	width: 18px;
-	height: 2px;
+	width: 38px;
+    height: 3px;
 	background: #fff;
 	position: absolute;
 	margin-left: -9px;
 	top: 50%;
-	left: 50%;
+	left: 44%;
+	transition: .3s;
 }
 .btn-menu span::before, .btn-menu span::after{
 	content: "";
-	width: 18px;
-	height: 2px;
+	width: 38px;
+    height: 3px;
 	background: #fff;
 	position: absolute;
 	left: 0;
 }
 .btn-menu span::before{
-	top: -5px;
+	top: -8px;
+	transition: .3s;
 }
 .btn-menu span::after{
-	bottom: -5px;
+	bottom: -8px;
+	transition: .3s;
 }
+
+.btn-menu.toggle span{
+	background: transparent;
+}
+.btn-menu.toggle span:before{
+	top: 0;
+	transform: rotate(45deg);
+}
+.btn-menu.toggle span:after{
+	top: 0;
+	transform: rotate(-45deg);
+}
+
+
+
+
+
+
+
+
+
+
+
+
 .menu{
 	display: none;
 	position: absolute;
@@ -84,7 +108,7 @@ body{
     text-align: center;
     line-height: 75px;
     z-index: 1;
-    background: #c79346;
+    background: #629fb7;
 }
 .menu ul{
 	padding: 0;
@@ -101,20 +125,23 @@ body{
 	text-decoration: none;
 }
 .menu ul li a:hover{
-	color: #f97c16;
+	color: #dae2eb;
 }
 
 
 .top-nav{
 	width: 100%;
     height: 75px;
-    background: rgba(0,0,0,0.4);
+    background: rgba(58, 68, 125, 0.3);
     position: fixed;
-    z-index: 1;
+    z-index: 999;
     top: 0;
+    -webkit-box-shadow: 0px 13px 35px -12px rgba(0,0,0,0.75);
+	-moz-box-shadow: 0px 13px 35px -12px rgba(0,0,0,0.75);
+	box-shadow: 0px 13px 35px -12px rgba(0,0,0,0.75);
 }
 nav.black{
-	background: #313131;
+	background: #619fb4;
 }
 nav #menu{
 	float: right;
@@ -174,12 +201,12 @@ nav #menu li a:focus{
 
 
 .about{
-	background: url(../img/A.jpg) no-repeat;
+	background: #dee6ef;
 	position: relative;
-	padding: 100px 0;
+	padding: 100px 0 150px;
 }
 .about img{
-	border: 4px solid #6f6f6f;
+	border: 4px solid #d5d5d7;
 	max-width: 100%;
 }
 .about1{
@@ -189,34 +216,34 @@ nav #menu li a:focus{
     max-width: 470px;
     padding: 0px 30px 15px 50px;
     float: right;
-    background: rgba(0,0,0,0.3);
-    border-bottom: 4px solid #6f6f6f;
-     -webkit-box-shadow: 5px -5px 20px -9px rgba(0,0,0,1);
-	-moz-box-shadow: 5px -5px 20px -9px rgba(0,0,0,1);
-	box-shadow: 5px -5px 20px -9px rgba(0,0,0,1);
+    background: rgba(255,255,255,0.9);
+    border-bottom: 4px solid #d5d5d7;
+    -webkit-box-shadow: 5px 5px 56px -9px rgba(0,0,0,0.75);
+	-moz-box-shadow: 5px 5px 56px -9px rgba(0,0,0,0.75);
+	box-shadow: 5px 5px 56px -9px rgba(0,0,0,0.75);
 }
 .about1 h2{
 	font-family: 'LibreBaskerville Bold';
 	font-size: 36px;
-	color: #d6d6d6;
+	color: #000;
 	margin-bottom: 10px;
 }
 .about1 p{
 	line-height: 23px;
 	font-size: 20px;
-	color: #fff;
+	color: #6f6f6f;
 	margin-top: 10px;
 	font-family: Monotype Corsiva;
 }
 .about1 b{
-	color: #d6d6d6;
+	color: #000;
 	font-size: 22px;
 	font-family: Monotype Corsiva;
 }
 
 
 .portfolio{
-	background: url(../img/port.jpg)no-repeat 50% 50%;
+	background: url(../img/www.jpeg)100% 0% no-repeat;
 	position: relative;
 	padding-bottom: 100px;
 }
@@ -227,7 +254,7 @@ nav #menu li a:focus{
 }
 .portfolio h2{
 	text-align: center;
-	color: #fff;
+	color: #000;
 	font-family: 'LibreBaskerville Bold';
 	font-size: 36px;
 	padding: 50px 0px 50px;
@@ -292,7 +319,7 @@ nav #menu li a:focus{
 
 
 .contact{
-	background: url(../img/contact.jpg) no-repeat 50% 50%;
+	background: #282d4e;
 	height: 500px;
 	padding-bottom: 70px;
 	background-size: 100%; 
@@ -313,7 +340,7 @@ nav #menu li a:focus{
     margin: 15px 24px;
 }
 .gmail{
-	background: rgba(0,0,0,.7);
+	background: #303763;
 	border-radius: 15px;
 	max-width: 100%;
     padding-top: 10px;

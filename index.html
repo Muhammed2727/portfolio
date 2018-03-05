@@ -4,7 +4,7 @@
 	<meta charset="UTF-8">
 	<title>Портфолио</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta name="theme-color" content="#91632c"/>
+	<meta name="theme-color" content="#a7aabc"/>
 
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/media.css">
@@ -44,15 +44,15 @@
 	<div class="about" id="about">
 		<div class="container">
 			<div class="imga">
-				<img src="img/about.jpg" alt="" width="410" class="wow fadeInUp">
+				<img src="img/about.jpg" alt="" width="410">
 			</div>
 
-			<div class="about1 wow fadeInUp">
+			<div class="about1 wow fadeInRight">
 				<h2>Обо мне</h2>
 				<p>Верстаю как статичные странички, корпоративные порталы, так и адаптивные промо-сайты и лендинги.<br>
 				Работаю чётко, качественно и быстро!</p>
 				<b>Краткий список моих знаний:</b><br>
-				<p>Начальные знания HTML&CSS<br>Уверенное знание HTML5<br>Уверенное знание и владение CSS3<br>Знание базовых шаблонов проектирования<br>Умение писать качественный рабочий код<br>Понимание Bootstrap<br>Уверенный опыт работы с Javascript<br>Разработка сайтов с нуля</p>
+				<p>Начальные знания HTML & CSS<br>Уверенное знание HTML5 & CSS3<br>Препроцессоры SASS<br>Знание базовых шаблонов проектирования<br>Умение писать качественный рабочий код<br>Понимание Bootstrap<br>Уверенный опыт работы с Javascript<br>Разработка сайтов с нуля</p>
 			</div>
 		</div>
 	</div>
@@ -61,19 +61,19 @@
 		<h2>Мои работы</h2>
 		<div class="portfolio1">
 			<div class="hover-box">
-				<a href="https://muhammed2727.github.io/Rabota1/"><img src="img/01.jpg" alt="">
+				<a href=" https://muhammed2727.github.io/Rabota3/ "><img src="img/01.jpg" alt="">
 				<i class="fa fa-search" aria-hidden="true"></i></a>
 			</div>
 			<div class="hover-box">
-				<a href=" https://muhammed2727.github.io/Rabota2/."><img src="img/02.jpg" alt="">
+				<a href="https://muhammed2727.github.io/Rabota4/"><img src="img/02.jpg" alt="">
 				<i class="fa fa-search" aria-hidden="true"></i></a>
 			</div>
 			<div class="hover-box">
-				<a href="#"><img src="img/1.jpg" alt="">
+				<a href="https://muhammed2727.github.io/Rabota1/"><img src="img/03.jpg" alt="">
 				<i class="fa fa-search" aria-hidden="true"></i></a>
 			</div>
 			<div class="hover-box">
-				<a href="#"><img src="img/1.jpg" alt="">
+				<a href=" https://muhammed2727.github.io/Rabota2/."><img src="img/04.jpg" alt="">
 				<i class="fa fa-search" aria-hidden="true"></i></a>
 			</div>
 			<div class="hover-box">
@@ -90,7 +90,7 @@
 	<div class="contact" id="contact">
 		<div class="container">
 			<h2>Контакты</h2>
-			<div class="gmail">
+			<div class="gmail  wow zoomIn">
 				<p><i class="fa fa-envelope" aria-hidden="true"></i>talantbekov2727@gmail.com</p>
 				<p><i class="fa fa-whatsapp" aria-hidden="true"></i>+996708767626</p>
 				<p><i class="fa fa-skype" aria-hidden="true"></i>Talantbekov2727</p>
@@ -108,7 +108,7 @@
 
 
 
-	<script type="text/javascript">
+	<script>
 
 		$(document).ready(function(){
 
@@ -119,7 +119,8 @@
 				}else{
 					setTimeout(function(){
 					$('.is-active').addClass('not-active').removeClass('is-active')
-					},600)			
+					},600)		
+					$('.btn-menu').toggleClass('toggle');	
 				}		
 			});
 		});

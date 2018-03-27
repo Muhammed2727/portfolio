@@ -66,9 +66,6 @@
 	.header{
 		height: 415px;
 	}
-	.top-nav{
-		position: static;
-	}
 	#menu{
 		display: none;
 	}
@@ -81,11 +78,8 @@
 		margin: 0px -40px;
 	}
 	.header1 h1{
-		padding-top: 60px;
+		padding-top: 140px;
 		font-size: 70px;
-	}
-	nav.black{
-		background: rgba(0,0,0,0.4);
 	}
 }
 
@@ -93,7 +87,6 @@
 @media screen and (max-width: 640px){
 	.header1 h1{
 		font-size: 60px;
-		padding-top: 100px;
 	}
 }
 
@@ -180,15 +173,20 @@
 	.about1 p{
 		font-size: 18px;
 	}
-	.about1{
-		margin: 0;
+}
+@media screen and (max-width: 320px){
+	.header1 h1{
+		font-size: 38px;
 	}
 }
 
 @media screen and (max-width: 295px){
 	.header1 h1 {
-    	font-size: 45px;
     	width: 250px;
+	}
+	.about1{
+		padding: 0px 20px 13px;
+		margin: 0;
 	}
 }
 
@@ -202,9 +200,6 @@
 	}
 	.about {
     	height: 660px;
-    }
-    .menu{
-    	height: 205px;
     }
 }
 

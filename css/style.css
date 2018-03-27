@@ -46,7 +46,9 @@ body{
 	width: 75px;
     height: 75px;
 	position: relative;
-	z-index: 2;
+	z-index: 12;
+	position: fixed;
+	right: 10px;
 }
 .btn-menu span{
 	width: 38px;
@@ -89,25 +91,16 @@ body{
 
 
 
-
-
-
-
-
-
-
-
-
 .menu{
 	display: none;
 	position: absolute;
-	height: 100vh;
     width: 100%;
     top: 0;
     right: 0;
     text-align: center;
     line-height: 75px;
-    z-index: 1;
+    z-index: 11;
+    position: fixed;
     background: #629fb7;
 }
 .menu ul{
@@ -134,11 +127,12 @@ body{
     height: 75px;
     background: rgba(58, 68, 125, 0.3);
     position: fixed;
-    z-index: 999;
+    z-index: 10;
     top: 0;
-    -webkit-box-shadow: 0px 13px 35px -12px rgba(0,0,0,0.75);
-	-moz-box-shadow: 0px 13px 35px -12px rgba(0,0,0,0.75);
-	box-shadow: 0px 13px 35px -12px rgba(0,0,0,0.75);
+	-webkit-box-shadow: 0px -1px 25px 0px rgba(58,68,125,1);
+	-moz-box-shadow: 0px -1px 25px 0px rgba(58,68,125,1);
+	box-shadow: 0px -1px 25px 0px rgba(58,68,125,1);
+
 }
 nav.black{
 	background: #619fb4;
@@ -169,7 +163,7 @@ nav #menu li a::before{
 	left: 0;
 	height: 2px;
 	width: 0;
-	background: #9b50b3;
+	background: #e063e8;
 	transition: .3s;
 }
 nav #menu li a::after{
@@ -218,9 +212,9 @@ nav #menu li a:focus{
     float: right;
     background: rgba(255,255,255,0.9);
     border-bottom: 4px solid #d5d5d7;
-    -webkit-box-shadow: 5px 5px 56px -9px rgba(0,0,0,0.75);
-	-moz-box-shadow: 5px 5px 56px -9px rgba(0,0,0,0.75);
-	box-shadow: 5px 5px 56px -9px rgba(0,0,0,0.75);
+ -webkit-box-shadow: 3px 0px 29px -2px rgba(255,255,255,1);
+-moz-box-shadow: 3px 0px 29px -2px rgba(255,255,255,1);
+box-shadow: 3px 0px 29px -2px rgba(255,255,255,1);
 }
 .about1 h2{
 	font-family: 'LibreBaskerville Bold';

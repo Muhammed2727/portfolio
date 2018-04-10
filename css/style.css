@@ -9,16 +9,13 @@ body{
 	padding: 0;
 }
 .container{
-	max-width: 75%;
+	max-width: 1150px;
 	margin: 0 auto;
+	padding: 0 20px;
 }
 .header{
-	background: url(../img/bg1.jpeg)100% 0% no-repeat;
-	max-width: 100%;
+	background: url(../img/bg1.jpeg)50% 0% fixed no-repeat;
 	height: 665px;
-}
-.header1{
-	max-width: 500px;
 }
 .header1 h1{
 	color: #619fb4;
@@ -26,16 +23,14 @@ body{
 	font-size: 80px;
 	margin: 0;
 	padding-top: 250px;
-	padding-left: 200px;
+	padding-left: 100px;
 }
 .header img{
-	position: relative;
 	display: block;
 	padding-top: 6px;
 }
 .brand{
 	float: left;
-    margin-left: 8%;
     margin-top: 1%;
 }
 
@@ -139,8 +134,6 @@ nav.black{
 }
 nav #menu{
 	float: right;
-	right: 8%;
-	position: relative;
 }
 nav #menu li{
 	display: inline-block;
@@ -196,25 +189,30 @@ nav #menu li a:focus{
 
 .about{
 	background: #dee6ef;
-	position: relative;
 	padding: 100px 0 150px;
+}
+.container-1{
+	max-width: 930px;
+	margin: 0 auto;
 }
 .about img{
 	border: 4px solid #d5d5d7;
 	max-width: 100%;
 }
+.about-con{
+	position: relative;
+}
 .about1{
 	position: absolute;
-    top: 130px;
-    right: 260px;
+    top: 30px;
+    right: 0;
     max-width: 470px;
     padding: 0px 30px 15px 50px;
-    float: right;
     background: rgba(255,255,255,0.9);
     border-bottom: 4px solid #d5d5d7;
- -webkit-box-shadow: 3px 0px 29px -2px rgba(255,255,255,1);
--moz-box-shadow: 3px 0px 29px -2px rgba(255,255,255,1);
-box-shadow: 3px 0px 29px -2px rgba(255,255,255,1);
+	-webkit-box-shadow: 3px 0px 29px -2px rgba(255,255,255,1);
+	-moz-box-shadow: 3px 0px 29px -2px rgba(255,255,255,1);
+	box-shadow: 3px 0px 29px -2px rgba(255,255,255,1);
 }
 .about1 h2{
 	font-family: 'LibreBaskerville Bold';
@@ -237,7 +235,7 @@ box-shadow: 3px 0px 29px -2px rgba(255,255,255,1);
 
 
 .portfolio{
-	background: url(../img/www.jpeg)100% 0% no-repeat;
+	background: url(../img/www.jpeg)50% 0% no-repeat;
 	position: relative;
 	padding-bottom: 100px;
 }
@@ -386,5 +384,77 @@ box-shadow: 3px 0px 29px -2px rgba(255,255,255,1);
     margin: 0 5px 0;
     border: none;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 

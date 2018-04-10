@@ -1,8 +1,4 @@
 @media screen and (max-width: 1300px){
-	.imga img{
-		height: 0;
-		border: none;
-	}
 	.about {
 		height: 500px;
 		display: block;
@@ -21,8 +17,9 @@
 	}
 
 	.about1{
-		width: 100%;
 		position: static;
+		margin: 0 auto;
+		text-align: center;
 	}
 	
 	.portfolio{
@@ -31,7 +28,9 @@
 	.header img{
 		padding-top: 10px;
 	}
-
+	.imga img{
+		display: none;
+	}
 }
 
 
@@ -73,10 +72,6 @@
 		display: block;	
 	}
 	
-	.about1{
-		display: block;
-		margin: 0px -40px;
-	}
 	.header1 h1{
 		padding-top: 140px;
 		font-size: 70px;
